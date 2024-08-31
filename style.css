@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+}
+/** NAV STYLING **/
+nav{
+    background:#232f3e;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+input,button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.btn{
+    background-color:#f5c518;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#ffdd45;
+    transition: all 0.1s;
+}
+
+/** Body styling **/
+
+main{
+    margin: 0 auto;
+    margin-block: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background: #232f3e;
+    color: white;
+    padding: 20px;
+}
+.movie-cont {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; 
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px; 
+}
+
+.movie-info{
+    padding-top: 13px;
+}
+.movie-info h2{
+    margin: 10px 5px;
+}
+.detail{
+    text-align: left;
+}
+.detail p{
+    padding-top: 15px;
+}
+img{
+    height: 450px;
+    padding:0px;
+}
+.movie-genre{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    padding-top: 12px;
+    overflow-x: auto;
+}
+.movie-genre p{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+.noBackground{
+    background:none;
+    box-shadow: none;
+    align-items: center;
+}
+.front {
+    margin: 0;
+    padding: 20px 0; 
+    font-size: 24px; 
+    color: #333; 
+}
+/** Responsive Code **/
+@media screen and (max-width:950px)
+{
+    .movie-cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    img{
+        width: 100%;
+        height: fit-content;
+    }
+    .detail{
+        padding: 0px 20px;
+    }
+    
+}
+@media screen and (max-width:630px)
+{
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+

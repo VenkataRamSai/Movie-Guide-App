@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Guide App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Movie Guide</h2>
+            </div>
+            <div class="search-cont">
+                <input type="text" class="input-box" placeholder="Search your Movie">
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div id="noBack" class="movie-cont noBackground">
+                <h3 class="front">Search Movie Details Here</h3>
+                <div class="error-message" style="color: red;"></div> <!-- Added an error message container -->
+                <div class="movie-poster"></div>
+                <div class="movie-details"></div>
+            </div>      
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2024 Movie Guide App</p>
+    </footer>
+    <script src="App.js"></script>
+</body>
+</html>
